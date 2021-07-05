@@ -24,6 +24,14 @@ curl -L https://nixos.org/nix/install | sh
 # Run this or login again to use Nix
 . "$HOME/.nix-profile/etc/profile.d/nix.sh"
 ```
+If on a Mac, use the following install command in your cli: 
+```sh
+ sh <(curl -L https://nixos.org/nix/install) --darwin-use-unencrypted-nix-store-volume
+```
+then run: 
+```
+. "$HOME/.nix-profile/etc/profile.d/nix.sh"
+```
 
 Then install dapptools:
 
